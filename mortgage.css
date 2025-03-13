@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.calculator-container{
+    display: flex;
+    align-items: center;
+    background: skyblue;
+    margin: 6rem 8rem;
+    padding: 4rem 6rem;
+    border-radius: 1rem;
+
+}
+
+.calculator{
+    padding: 1rem;
+    background: whitesmoke;
+    width: 100%;
+    border-radius:  13px 0 0 13px;
+    max-width: 280px
+}
+
+.calculator header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+header h4{
+    font-size: 13px;
+}
+
+#clearAll{
+    font-size: 10px;
+    text-decoration: underline;
+    color: #333;
+}
+
+form label{
+    font-size: 12px;
+}
+
+.amount-input,
+.term-input,
+.rate-input{
+    display: flex;
+    border: 1px solid gray;
+   
+}
+
+.amount-input input,
+.term-input input,
+.rate-input input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+}
+
+.amount-input span, 
+.term-input span,
+.rate-input span{
+    font-size: 11px;
+    background: skyblue;
+    padding: 5px;
+}
+
+.term-rate{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.term{
+    display: flex;
+    flex-direction: column;
+}
+
+.mortgage-types{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 1rem;
+}
+
+.mortgage-type{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid gray;
+    padding: 4px;
+}
+
+.mortgage-type span{
+    font-size: 12px;
+}
+
+button{
+    font-size: 10px;
+    padding: 3px 7px;
+    border-radius: 1rem;
+    border: none;
+    background: rgb(190, 240, 92);
+}
+
+.results{
+    padding: 1rem;
+    background: darkblue;
+    width: 100%;
+    border-radius:  0 13px 13px 15px;
+    max-width: 280px;
+}
+
+.results h4{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color:aliceblue;
+}
+
+.results p{
+    font-size: 11px;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.486);
+}
+
+.repayment-container{
+    border-top: 3px solid gold;
+    padding: 1rem;
+    background: rgba(5, 5, 100, 0.877);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.185);
+    margin-bottom: 2rem;
+}
+
+.monthly{
+    border-bottom: 1px solid rgba(255, 217, 0, 0.507);
+    margin-bottom: 1rem;
+}
+
+.monthly h5,
+.total h5{
+    color:rgba(250, 235, 215, 0.651); 
+    font-size: 9px
+}
+
+.monthly span{
+    font-size: 2.5rem;
+    color: gold;
+}
+
+.total span{
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+.copy{
+    font-size: 10px;
+    color: blue;
+    display: none;
+}
+
+@media (max-width : 750px){
+    .calculator-container{
+        flex-direction: column;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .calculator, 
+    .results{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .copy{
+        display: block;
+    }
+    
+}
